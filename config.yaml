@@ -15,8 +15,8 @@ modbus:
 mqtt:
   broker: localhost
   port: 1883
-  username: cloudbit
-  password: cloudbit2024
+  username: "your_username"
+  password: "your_plaintext_password"
   topic_prefix: homeassistant  # For Home Assistant discovery
   discovery_prefix: homeassistant # Default Home Assistant discovery prefix
 
