@@ -1,0 +1,23 @@
+# config.yaml
+serial:
+  port: /dev/ttyUSB0
+  baudrate: 9600
+  parity: none  # Or 'even', 'odd'
+  bytesize: 8
+  stopbits: 0
+  timeout: 3
+
+modbus:
+  slave_address: 1
+  close_port_after_each_call: False
+  debug: True
+
+mqtt:
+  broker: localhost
+  port: 1883
+  username: cloudbit
+  password: cloudbit2024
+  topic_prefix: homeassistant  # For Home Assistant discovery
+  discovery_prefix: homeassistant # Default Home Assistant discovery prefix
+
+scan_interval: 10  # seconds
